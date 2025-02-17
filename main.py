@@ -1,3 +1,5 @@
-print("Hello world")
 
-print("Hello Dasha")
+def print_hello():
+    print("Hello!")
+    
+print_hello()
