@@ -1,14 +1,14 @@
-# from datetime import datetime
+from datetime import datetime
 
-# def get_days_from_today(date):
-#     try:
-#         formatted_date = datetime.strptime(date, '%Y-%m-%d').date()
-#         current_date = datetime.today().date()
-#         return (formatted_date - current_date).days
-#     except ValueError:
-#         return "Incorrectly entered data. Enter in the format: 'YYYY-MM-DD'"
+def get_days_from_today(date):
+    try:
+        formatted_date = datetime.strptime(date, '%Y-%m-%d').date()
+        current_date = datetime.today().date()
+        return (formatted_date - current_date).days
+    except ValueError:
+        return "Incorrectly entered data. Enter in the format: 'YYYY-MM-DD'"
 
-# print(get_days_from_today('2025-12-31'))
+print(get_days_from_today('2025-12-31'))
 
 
 
@@ -23,4 +23,4 @@ def get_numbers_ticket(min, max, quantity):
     numbers = random.sample(range(min, max + 1), quantity)
     return sorted(numbers)
 
-print(get_numbers_ticket(1, 49, 6))
+print(get_numbers_ticket(-10, 10, 5))
